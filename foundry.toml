@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc = "0.8.26"
+remappings = ["forge-std/=lib/forge-std/src/"]
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+# Public Base mainnet RPC with archive access at the pinned block (verified 2026-11-17).
+# No API key. This is the only setup a re-runner needs.
+[rpc_endpoints]
+base = "https://base.drpc.org"
